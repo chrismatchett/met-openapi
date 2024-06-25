@@ -1,0 +1,113 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Environment variables #
+.env
+
+# Django stuff #
+*.sqlite3
+db.sqlite3
+
+# macOS #
+.DS_Store
+
+# Python #
+*.py[cod]
+*$py.class
+.python-version
+
+# Distribution / packaging #
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller #
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs #
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports #
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+# Celery beat schedule file
+celerybeat-schedule
+
+# Django migrations #
+**/migrations/*
+!**/migrations/__init__.py
+
+# Translations #
+*.mo
+*.pot
+
+# Django static files #
+staticfiles/
+static/
+
+# Jupyter Notebook #
+.ipynb_checkpoints
+
+# pyenv #
+.python-version
+
+# VS Code #
+.vscode/
+*.code-workspace
+
+# MySQL #
+*.sql
+
+# PostgreSQL #
+*.pgsql
+
+# Redis #
+dump.rdb
+
+# Other backups #
+*.bak
+
+# Media files #
+media/
+
+# Pycharm #
+.idea/
+
+# Virtual Environment #
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
