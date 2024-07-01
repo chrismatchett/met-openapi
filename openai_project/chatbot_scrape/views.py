@@ -10,6 +10,7 @@ load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def scrape_website(url):
+    # https://www.nidirect.gov.uk/articles/coronavirus-covid-19-testing
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     

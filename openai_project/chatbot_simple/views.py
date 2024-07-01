@@ -1,5 +1,3 @@
-# https://www.nidirect.gov.uk/articles/coronavirus-covid-19-testing
-
 from django.shortcuts import render
 import os
 from dotenv import load_dotenv
@@ -21,6 +19,7 @@ def ask_openai(question):
 
 def index(request):
     response = None
+    # print(openai.api_key)
     if request.method == 'POST':
         question = request.POST.get('question')
         if question:
