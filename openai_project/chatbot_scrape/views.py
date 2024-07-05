@@ -14,15 +14,17 @@ def scrape_website(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     
-    # Example: Extract all article text
+    # Extract all <article> tags
     articles = soup.find_all('article')
-    if not articles:
-        # Fallback if <article> tags are not used
-        articles = soup.find_all(class_='article-class-name')  # Replace 'article-class-name' with the actual class name used for articles
     
-    text = "\n".join([article.get_text() for article in articles])
+    # Initialize a variable to store the HTML content
+    html_content = ""
     
-    return text
+    # Concatenate the HTML content of each <article> tag
+    for article in articles:
+        html_content += str(article)
+    
+    return html_content
 
 def ask_question(text, question):
     # Formulate the prompt
